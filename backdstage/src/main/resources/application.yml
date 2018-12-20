@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+  jpa:
+    properties:
+      hibernate:
+        dialect:
+          cn.hyperchain.zeus.config.MysqlConfig
+server:
+  tomcat:
+    uri-encoding: UTF-8
+
